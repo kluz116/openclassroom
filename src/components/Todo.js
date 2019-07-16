@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { isTemplateElement } from '@babel/types';
+
 
 export default class Todo extends Component {
    
@@ -11,7 +11,7 @@ export default class Todo extends Component {
              todo : []
         }
     }
-    
+     
     componentDidMount(){
         axios.get('https://jsonplaceholder.typicode.com/todos')
         .then(response =>{

@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Form from './components/Form';
-import CommentList from './components/CommentList';
-import Todo from './components/Todo';
+import AddComment from './components/AddComment';
 
 function App() {
   return (
     <div className="App">
-       <Todo></Todo>
+         <AddComment></AddComment>
     </div>
 
   );
