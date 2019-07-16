@@ -15,7 +15,7 @@ export default class CommentList extends Component {
         .then(response =>{
             console.log(response)
             this.setState({
-                comment:response
+                comment:response.data
             })
         })
         .catch(error => {
@@ -26,9 +26,9 @@ export default class CommentList extends Component {
     render() {
         return (
             <div>
-                {this.state.comment.map((item)=>{
+                {this.state.comment.map((item)=>
                       <div key ={item.id }>{item.name}</div>
-                })}
+                )}
             </div>
         )
     }
